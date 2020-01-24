@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <input>
+    <net-file value="merge.net.xml"/>
+    <route-files value="merge_stage2.rou.xml"/>
+    <gui-settings-file value="merge.settings.xml"/>
+  </input>
+  <time>
+    <step-length value="0.2"/>
+  </time>
+</configuration>

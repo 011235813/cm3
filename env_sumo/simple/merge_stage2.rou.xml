@@ -1,0 +1,241 @@
+<routes>
+
+  <route id="route_straight"
+	 edges = "edge1" />
+  
+  <vType id="ego_car_type"
+	 minGap="0"
+	 maxSpeed="50"
+	 color="72,141,173"
+	 vClass="passenger"
+	 guiShape="passenger/sedan"
+	 minGapLat="0"
+	 maxSpeedLat="2.0"
+	 lcCooperative="0.0"
+	 lcSpeedGainRight="1.0"
+	 lcPushy="1.0"
+	 lcPushyGap="0.0"
+	 lcAssertive="100.0"
+	 lcAccelLat="10.0"/>
+
+  <vType id="ego_car_type1"
+	 minGap="0"
+	 maxSpeed="50"
+	 color="168,71,62"
+	 vClass="passenger"
+	 guiShape="passenger/sedan"
+	 minGapLat="0"
+	 maxSpeedLat="2.0"
+	 lcCooperative="0.0"
+	 lcSpeedGainRight="1.0"
+	 lcPushy="1.0"
+	 lcPushyGap="0.0"
+	 lcAssertive="100.0"
+	 lcAccelLat="10.0"/>
+
+  <vType id="ego_car_type2"
+	 minGap="0"
+	 maxSpeed="50"
+	 color="81,153,82"
+	 vClass="passenger"
+	 guiShape="passenger/sedan"
+	 minGapLat="0"
+	 maxSpeedLat="2.0"
+	 lcCooperative="0.0"
+	 lcSpeedGainRight="1.0"
+	 lcPushy="1.0"
+	 lcPushyGap="0.0"
+	 lcAssertive="100.0"
+	 lcAccelLat="10.0"/>
+
+  <vType id="ego_car_type3"
+	 minGap="0"
+	 maxSpeed="50"
+	 color="72,141,173"
+	 vClass="passenger"
+	 guiShape="passenger/sedan"
+	 minGapLat="0"
+	 maxSpeedLat="2.0"
+	 lcCooperative="0.0"
+	 lcSpeedGainRight="1.0"
+	 lcPushy="1.0"
+	 lcPushyGap="0.0"
+	 lcAssertive="100.0"
+	 lcAccelLat="10.0"/>
+
+  <vType id="ego_car_type4"
+	 minGap="0"
+	 maxSpeed="50"
+	 color="100,100,100"
+	 vClass="passenger"
+	 guiShape="passenger/sedan"
+	 minGapLat="0"
+	 maxSpeedLat="2.0"
+	 lcCooperative="0.0"
+	 lcSpeedGainRight="1.0"
+	 lcPushy="1.0"
+	 lcPushyGap="0.0"
+	 lcAssertive="100.0"
+	 lcAccelLat="10.0"/>  
+
+  <vType id="ego_truck_type"
+	 vClass="trailer"
+	 guiShape="truck/semitrailer"
+	 maxSpeed="35"
+	 color="206,56,43" />
+
+  <vTypeDistribution id="dist_lane0">
+    <vType id="car_0"
+	   vClass="passenger"
+	   maxSpeed="50"
+	   speedFactor="1.0"
+	   speedDev="0.1"
+	   sigma="0.5"
+	   color="yellow"
+	   probability="0.8"/>
+    <vType id="truck_0"
+	   vClass="trailer"
+	   maxSpeed="35"
+	   speedFactor="1.0"
+	   speedDev="0.1"
+	   sigma="0.5"
+	   color="red"
+	   probability="0.2"/>
+  </vTypeDistribution>
+
+  <vTypeDistribution id="dist_lane1">
+    <vType id="car_1"
+	   vClass="passenger"
+	   maxSpeed="50"
+	   speedFactor="1.0"
+	   speedDev="0.1"
+	   sigma="0.5"
+	   color="yellow"
+	   probability="0.9"/>
+    <vType id="truck_1"
+	   vClass="trailer"
+	   maxSpeed="35"
+	   speedFactor="1.0"
+	   speedDev="0.1"
+	   sigma="0.5"
+	   color="red"
+	   probability="0.1"/>
+  </vTypeDistribution>
+
+  <vTypeDistribution id="dist_lane2">
+    <vType id="car_2"
+	   vClass="passenger"
+	   maxSpeed="50"
+	   speedFactor="1.0"
+	   speedDev="0.1"
+	   sigma="0.5"
+	   color="yellow"
+	   probability="1.0"/>
+    <vType id="truck_2"
+	   vClass="trailer"
+	   maxSpeed="35"
+	   speedFactor="1.0"
+	   speedDev="0.1"
+	   sigma="0.5"
+	   color="red"
+	   probability="0"/>
+  </vTypeDistribution>
+
+  <vTypeDistribution id="dist_lane3">
+    <vType id="car_3"
+	   vClass="passenger"
+	   maxSpeed="50"
+	   speedFactor="1.0"
+	   speedDev="0.1"
+	   sigma="0.5"
+	   color="yellow"
+	   probability="1.0"/>
+    <vType id="truck_3"
+	   vClass="trailer"
+	   maxSpeed="35"
+	   speedFactor="1.0"
+	   speedDev="0.1"
+	   sigma="0.5"
+	   color="red"
+	   probability="0"/>
+  </vTypeDistribution>
+
+  <!--
+  <vTypeDistribution id="dist_lane4">
+    <vType id="car_4"
+	   vClass="passenger"
+	   maxSpeed="50"
+	   speedFactor="1.0"
+	   speedDev="0.1"
+	   sigma="0.5"
+	   color="yellow"
+	   probability="1.0"/>
+    <vType id="truck_4"
+	   vClass="trailer"
+	   maxSpeed="35"
+	   speedFactor="1.0"
+	   speedDev="0.1"
+	   sigma="0.5"
+	   color="red"
+	   probability="0"/>
+  </vTypeDistribution>
+  -->
+  
+  <!--
+  <flow id="flow0"
+	type="dist_lane0"
+	begin="0"
+	end="2000000"
+	departLane="0"
+	departPos="base"
+	departSpeed="29.1"
+	probability="0.5">
+    <route edges="edge1 edge2 edge3"/>
+  </flow>
+
+  <flow id="flow1"
+	type="dist_lane1"
+	begin="0"
+	end="2000000"
+	departLane="1"
+	departPos="base"
+	departSpeed="29.1"
+	probability="0.2">
+    <route edges="edge1 edge2 edge3"/>
+  </flow>
+
+  <flow id="flow2"
+	type="dist_lane2"
+	begin="0"
+	end="2000000"
+	departLane="2"
+	departPos="base"
+	departSpeed="29.1"
+	probability="0.2">
+    <route edges="edge1 edge2 edge3"/>
+  </flow>
+
+  <flow id="flow3"
+	type="dist_lane3"
+	begin="0"
+	end="2000000"
+	departLane="3"
+	departPos="base"
+	departSpeed="29.1"
+	probability="0.2">
+    <route edges="edge1 edge2 edge3"/>
+  </flow>
+
+  <flow id="flow4"
+	type="dist_lane4"
+	begin="0"
+	end="2000000"
+	departLane="4"
+	departPos="base"
+	departSpeed="29.1"
+	probability="0.1">
+    <route edges="edge1 edge2 edge3"/>
+  </flow>
+  -->
+  
+</routes>

@@ -1,0 +1,34 @@
+{
+    "n_agents" : 1,
+    "init" : {
+	"n_rows" : 3,
+	"n_columns" : 8,
+	"n_obs" : 2,
+	"agents_r" : [0],
+	"agents_c" : [8]
+    },
+    "dimensions" : {
+	"rows_state" : 3,
+	"columns_state" : 9,
+	"channels_state" : 2,
+	"l_state_one" : 4,
+	"l_obs_others" : 2,
+	"l_obs_self" : 4,
+	"rows_obs" : 5,
+	"columns_obs" : 5,
+	"channels_obs" : 3,
+	"l_action" : 5,
+	"l_goal" : 2
+    },
+    "nn" : {
+	"Q_conv_f" : 4,
+	"Q_conv_k" : [3,5],
+	"Q_n_h1_1" : 256,
+	"Q_n_h1_2" : 32,
+	"Q_n_h2" : 256,
+	"A_conv_f" : 6,
+	"A_conv_k" : [3,3],
+	"A_n_h1" : 256,
+	"A_n_h2" : 256
+    }
+}

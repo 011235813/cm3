@@ -1,0 +1,8 @@
+{
+    "n_agents" : 2,
+    "agents_x" : [-0.9, -0.9],
+    "agents_y" : [0.2, -0.2],
+    "landmarks_x" : [0.9, 0.9],
+    "landmarks_y" : [-0.2, 0.2],
+    "initial_std" : 0.05
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 01/02/19 16:51:35 by Eclipse SUMO netedit Version 1.1.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\Jiachen\Documents\Projects\ICML2019\CM3\CM3-py3\env_sumo\simple\merge.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\Jiachen\Documents\Projects\ICML2019\CM3\CM3-py3\env_sumo\simple\merge.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="true"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="0"/>
+        <junctions.limit-turn-speed value="-1"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,-8.25,200.01,0.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id="edge1" from="0" to="1" priority="1" length="200.00" shape="0.00,0.00 200.01,0.00">
+        <lane id="edge1_0" index="0" speed="30.00" length="200.00" shape="-0.00,-11.20 200.01,-11.20"/>
+        <lane id="edge1_1" index="1" speed="30.00" length="200.00" shape="-0.00,-8.00 200.01,-8.00"/>
+        <lane id="edge1_2" index="2" speed="30.00" length="200.00" shape="-0.00,-4.80 200.01,-4.80"/>
+        <lane id="edge1_3" index="3" speed="30.00" length="200.00" shape="-0.00,-1.60 200.01,-1.60"/>
+    </edge>
+
+    <junction id="0" type="dead_end" x="0.00" y="0.00" incLanes="" intLanes="" shape="-0.00,0.00 -0.00,-12.80"/>
+    <junction id="1" type="dead_end" x="200.00" y="-8.25" incLanes="edge1_0 edge1_1 edge1_2 edge1_3" intLanes="" shape="200.00,-12.80 200.00,0.00"/>
+
+</net>

@@ -1,0 +1,8 @@
+{
+    "n_agents" : 1,
+    "agents_x" : [-1.0],
+    "agents_y" : [-1.0],
+    "landmarks_x" : [1.0],
+    "landmarks_y" : [1.0],
+    "initial_std" : 0
+}

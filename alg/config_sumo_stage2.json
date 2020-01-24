@@ -1,0 +1,16 @@
+{
+    "n_agents" : 2,
+    "goal_lane" : [3,0],
+    "goal_pos" : [190,190],
+    "route" : ["route_straight","route_straight"],
+    "speed" : [30,30],
+    "lane" : [1,2],
+    "init_position" : [0,0],
+    "id" : ["ego_1","ego_2"],
+    "vtypes" : ["ego_car_type1","ego_car_type2"],
+    "depart_mean" : [0,0],
+    "depart_stdev" : 0.5,
+    "total_length" : 200,
+    "total_width" : 12.8,
+    "save_threshold" : 18.0
+}
