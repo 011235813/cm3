@@ -96,3 +96,9 @@ There are three simulations, selected by the `experiment` field in `alg/config.j
 }
 </pre>
 
+
+## License
+
+See [LICENSE](LICENSE).
+
+SPDX-License-Identifier: MIT
