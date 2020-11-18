@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 
-from sumosimhri import car
+from . import car
 from . import observation
 
 class EgoCar(car.Car):
