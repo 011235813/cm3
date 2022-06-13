@@ -88,11 +88,11 @@ There are three simulations, selected by the `experiment` field in `alg/config.j
 ## Citation
 
 <pre>
-@article{yang2018cm3,
-  title={Cm3: Cooperative multi-goal multi-stage multi-agent reinforcement learning},
+@inproceedings{yang2019cm3,
+  title={CM3: Cooperative Multi-goal Multi-stage Multi-agent Reinforcement Learning},
   author={Yang, Jiachen and Nakhaei, Alireza and Isele, David and Fujimura, Kikuo and Zha, Hongyuan},
-  journal={arXiv preprint arXiv:1809.05188},
-  year={2018}
+  booktitle={International Conference on Learning Representations},
+  year={2019}
 }
 </pre>
 
